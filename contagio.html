@@ -1,0 +1,360 @@
+
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contágio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/stylePre.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobilePre.css">
+        <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<script src="js/mobile.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img height="100px" src="images/virusCorona.png"></a>
+				<ul id="navigation">
+                        <li>
+                            <a href="index.html">Início</a>
+                        </li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li class="menu">
+						<a href="prevencao.html">Prevenção</a>
+					</li>
+					<li class="menu">
+						<a href="estatisticas.html">Estatísticas</a>
+					</li>
+					<li>
+                        <li class="menu selected">
+						<a href="contagio.html">Contágio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="about">
+			<div class="header">
+				<div>
+          <h1>Vocês está se cuidadondo?</h1>
+					<h2>Qual o seu percentual de chance para contrair e transmitir o Corona Vírus?</h2>
+                    <form id="form" name="formulario" action="#" onsubmit="debug(event)">
+                      <div>
+                          <p>Você está fazendo isolamento total?</p>
+                          <label> 
+                            <input name="group1" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>
+                          <label> 
+                            <input name="group1" type="radio" value="false" class="with-gap" > 
+                            <span>Não</span>
+                          </label>
+                      </div>        
+                      <div>    
+                        <p>Tem higizanado as mãos?</p>
+                            <label> 
+                              <input name="group2" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                            </label>  
+                            <label> 
+                              <input name="group2" type="radio" value="false" class="with-gap" >
+                              <span>Não</span>
+                            </label>
+                      </div>
+                      <div>    
+                          <p>Tem higienizado os alimentos que chegam em sua casa?</p>
+                            <label> 
+                              <input name="group3" type="radio" value="true" class="with-gap" required>
+                              <span>Sim</span>
+                            </label>
+                            <label> 
+                              <input name="group3" type="radio" value="false" class="with-gap" >
+                              <span>Não</span>
+                            </label>
+                      </div>
+                      <div>                          
+                          <p>Você está evitando abraços e beijos?</p>
+                          <label> 
+                              <input name="group4" type="radio" value="true" class="with-gap" required>
+                              <span>Sim</span>
+                          </label>    
+                          <label> 
+                            <input name="group4" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>      
+                          <p>Você está respeitando a distância de 2 metros recomenda?</p>
+                          <label> 
+                            <input name="group5" type="radio" value="true" class="with-gap" required>
+                              <span>Sim</span>
+                          </label>
+                          <label> 
+                            <input name="group5" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label> 
+                      </div>
+                      <div>                          
+                          <p>Está tendo aliemtação saúdavel?</p>
+                          <label> 
+                            <input name="group6" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group6" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>                          
+                          <p>Está bebendo bastante água?</p>
+                          <label> 
+                            <input name="group7" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group7" type="radio" value="false" class="with-gap"  >
+                            <span>Não</span>
+                          </label> 
+                      </div>
+                      <div>                          
+                          <p>Quando precisa ir a rua, vai de máscara?</p>
+                          <label> 
+                            <input name="group8" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group8" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label> 
+                      </div>
+                      <div>    
+                          <p>No descarte das máscaras e/ou luvas, está descartando<br> em lixo exclusivo?</p>
+                          <label> 
+                            <input name="group9" type="radio" value="true" class="with-gap" required>
+                              <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group9" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>    
+                          <p>Quando você tem que sair para algum comércio, você<br> respeita as regras impostas?</p>
+                          <label> 
+                            <input name="group10" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group10" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>    
+                          <p>Quando você tem que utilizar algum trnsaporte público<br> só imbarca quando tem acentos vazios?</p>
+                          <label> 
+                            <input name="group11" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group11" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label> 
+                      </div>
+                      <div>                          
+                          <p>Você não está colocando as mãos no rosto, nariz e olhos?</p>
+                          <label> 
+                            <input name="group12" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>        
+                          <label> 
+                          <input name="group12" type="radio" value="false" class="with-gap" >
+                          <span>Não</span>
+                          </label>
+                      </div>    
+                      <div>          
+                          <p>Quando chega em casa após ter saido, se higieniza<br> imediatamente, com o mínimo possivel de contato<br> com a casa e as pessoa?</p>
+                          <label> 
+                            <input name="group13" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>      
+                          <label> 
+                            <input name="group13" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>    
+                          <p>Quando você ou alguem da sua família estiver com<br> sintomas ou simplismente resfriado, é possivel aderir<br> os protocolos de issolamento do individuo em uma<br> parte da casa?</p>
+                          <label>
+                            <input name="group14" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>           
+                            <label> 
+                              <input name="group14" type="radio" value="false" class="with-gap" >
+                              <span>Não</span>
+                            </label>
+                      </div>
+                      <div>    
+                          <p>Quando está na rua faz uso do alcool em gel para<br> higienizar as mãos e o celular?</p>
+                          <label> 
+                            <input name="group15" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>           
+                          <label> 
+                            <input name="group15" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>    
+                          <p>Quando espirra cobre o rosto com lenço ou a parte<br> do cotovelo?</p>
+                          <label> 
+                            <input name="group16" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>           
+                          <label> 
+                            <input name="group16" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>        
+                          <p>Você não compartilha objetos de uso pessoal, como<br> talheres, toalhas...?</p>
+                            <label> 
+                              <input name="group17" type="radio" value="true" class="with-gap" required>
+                              <span>Sim</span>
+                            </label>     
+                            <label> 
+                              <input name="group17" type="radio" value="false" class="with-gap" >
+                              <span>Não</span>
+                            </label>
+                      </div>
+                      <div>    
+                          <p>Você mantém janelas e portas abertas para circulação<br> de ar, em sua casa?</p>
+                          <label> 
+                            <input name="group18" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group18" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>  
+                      </div>
+                      <div>    
+                          <p>Você utiliza mascara e luva ao cozinhar?</p>
+                          <label> 
+                            <input name="group19" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>     
+                          <label> 
+                            <input name="group19" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>
+                      <div>    
+                          <p>Você não dorme em local de clima frio?</p>
+                          <label> 
+                            <input name="group20" type="radio" value="true" class="with-gap" required>
+                            <span>Sim</span>
+                          </label>       
+                          <label> 
+                            <input name="group20" type="radio" value="false" class="with-gap" >
+                            <span>Não</span>
+                          </label>
+                      </div>                            
+                      <div class="col s12 l12 center">
+                        <button class="btn waves-effect waves-light" type="sbmit" name="action" onclick="porcentagem()">Calcular
+                          <i class="material-icons right">check_circle</i>
+                        </button>
+                      </div>
+                    </form>
+                    <div id="resposta">
+                        <p id="p"></p>
+                    </div>
+				      </div> 
+        </div>
+		</div>
+		<div id="footer">
+			<div class="footnote">
+				<div>
+					<p>&copy; 2020 Coronga Vírus</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/aviso.js"></script>
+</body>
+    <script src="js/percent.js" type="text/javascript"></script>
+    <!--<script src="js/aviso.js" type="text/javascript"></script>-->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

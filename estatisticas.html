@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estatísticas</title>
+	<link rel="stylesheet" href="css/stylePre.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobilePre.css">
+        <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img height="100px" src="images/virusCorona.png"></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Início</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li class="menu">
+						<a href="prevencao.html">Prevenção</a>
+					</li>
+					<li class="menu selected">
+						<a href="estatisticas.html">Estatísticas</a>
+					</li>
+					<li>
+						<a href="contagio.html">Contágio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="about">
+			<div class="header">
+				<div>
+                    <h2>Situação no Brasil</h2>
+                    <iframe height="700px" width="940px" id="brasil" src="https://covid.saude.gov.br/"></iframe>
+                    <h2>Quantidade de leitos, equipamentos e materiais</h2>
+                    <h4>Veja no mapa, a disponibilidade dos itens abaixo por estado</h4>
+                    <iframe height="700px" width="940px" src="https://covid-insumos.saude.gov.br/paineis/insumos/painel.php"></iframe>
+                    <h2>Situação no mundo</h2>
+                    <iframe height="700px" width="940px" src="https://who.sprinklr.com/"></iframe>
+                    <h2>Visualização de dados</h2>
+                    <h4>Números da infecção global do coronavírus</h4>
+                    <iframe class="ind" width="560" height="315" src="https://www.youtube.com/embed/UDKwHKzukas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+                
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footnote">
+				<div>
+					<p>&copy; 2020 Coronga Vírus</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
